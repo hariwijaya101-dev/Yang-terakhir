@@ -1,0 +1,261 @@
+body {
+  font-family: "Lora", serif;
+  color: #262626;
+  background: #f5f0e6;
+  scroll-behavior: smooth;
+}
+
+#sejarah,
+#about,
+#lokasi {
+  background: #f5f0e6;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-title,
+.navbar-brand {
+  font-family: "Cinzel", serif;
+}
+
+.section-title {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #4a2f1b;
+}
+
+.section-title::before {
+  content: "❦";
+  display: block;
+  color: #705c4d;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #ffc107;
+  display: block;
+  margin: 15px auto;
+}
+
+.navbar {
+  padding: 18px 0;
+  background: rgba(74, 47, 27, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+  color: #f2c14e !important;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar-brand:hover {
+  color: #000 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f8f1e7 !important;
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #f2c14e !important;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(16, 22, 40, 0.72);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 5rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.carousel-caption p {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+#sejarah img {
+  width: 100%;
+  height: 690px;
+  object-fit: auto;
+}
+
+.quote-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.quote-section blockquote {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  color: #6b4226;
+}
+
+.narasi {
+  font-size: 1rem;
+  line-height: 1, 5;
+  text-align: justify;
+}
+
+.narasi p {
+  text-align: justify;
+}
+
+#about .row.g-4 > .col-md-4 {
+  text-align: center;
+  padding-top: 30px;
+  object-fit: contain;
+}
+
+#about .row.g-4 .btn-brand {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 280px;
+  background-color: #000;
+  object-fit: cover;
+  object-position: center 65%;
+  border-radius: 15px;
+  border: 8px solid white;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.btn-brand {
+  background: #f2c14e;
+  border: 1px solid transparent;
+  color: #1f3455 !important;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 50px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background: #d9a926;
+  color: #1f3455 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(31, 52, 85, 0.18);
+}
+
+.map-card {
+  background: white;
+  padding: 0;
+  border: 8px solid #9c806d;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.map-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.map-card iframe {
+  border-radius: 15px;
+  height: 500px;
+  width: 100%;
+  display: block;
+}
+
+.video-description {
+  max-width: 850px;
+  margin: 0 auto 30px;
+  text-align: center;
+  color: #555;
+  line-height: 1.8;
+}
+
+.video-card {
+  position: relative;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #ae9887;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.video-card iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-link {
+  margin: 25px 0 0;
+  text-align: center;
+}
+
+footer {
+  background: #212529;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+footer p {
+  margin: 0;
+}
